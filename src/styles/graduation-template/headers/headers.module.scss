@@ -1,0 +1,113 @@
+.headers {
+    height: 48px;
+    width: 100%;
+    padding: 0 20px;
+    //border-bottom: 1px solid #e2e6ed;
+    border-bottom: 1px solid rgba(17, 31, 44, 0.04);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: rgb(17, 31, 44);
+    line-height: 24px;
+
+    .tool-menu{
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        justify-content: flex-start;
+        margin-right: 16px;
+    }
+    .doc-name{
+        height: 48px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 16px;
+        margin-right: 16px;
+
+
+    }
+}
+
+.tool-menu{
+    .save-info{
+        color: rgba(23, 26, 29, 0.6);
+        font-size: 12px;
+        line-height: 16px;
+        max-width: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 4px;
+        padding: 2px;
+        margin-left: 4px;
+    }
+    .tools{
+        display: flex;
+        flex-direction: row;
+        margin-right: 8px;
+        .tool{
+            height: 24px;
+            vertical-align: middle;
+            padding: 4px;
+            margin: 0 3px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .save-info{
+        font-size: 16px;
+        padding: 4px;
+        .save-status{
+            max-width: 100px;
+            margin-left: 2px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            cursor: unset;
+            font-size: 12px;
+        }
+    }
+}
+
+.user-menu{
+    display: flex;
+    flex-direction: row;
+    .user-container{
+        display: flex;
+        margin-left: 2px;
+        .username{
+            background-color: rgb(0, 137, 255);
+            color: rgb(255, 255, 255);
+            font-size: 14px;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 28px;
+            height: 28px;
+            border: 1px solid rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .more-container{
+        display: flex;
+        margin-left: 4px;
+        align-items: center;
+        justify-content: right;
+        .more{
+            font-size: 20px;
+            height: 28px;
+            width: 28px;
+            padding: 4px;
+            display: flex;
+        }
+    }
+}

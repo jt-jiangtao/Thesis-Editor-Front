@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "react-app",
+    "react-app/jest"
+  ],
+  "plugins": [
+    "react-hooks"
+  ],
+  "rules": {
+    "no-console": ["warn", { "allow": ["info", "error"] }],
+    "quotes": ["warn", "single"],
+    "semi": ["warn", "never"],
+    "no-debugger": ["warn"],
+    "eqeqeq": ["warn"],
+    "no-else-return": ["warn"],
+    "no-extra-bind": ["warn"],
+    "prefer-destructuring": [
+      "warn",
+      {
+        "array": true,
+        "object": true
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ],
+    "react-hooks/rules-of-hooks": "warn",
+    "array-bracket-spacing": ["warn","always"],
+    "object-curly-spacing": ["warn","always"],
+    "indent": ["warn", 2],
+    "prefer-const": ["warn", {
+      "destructuring": "any",
+      "ignoreReadBeforeAssign": false
+    }]
+  }
+}

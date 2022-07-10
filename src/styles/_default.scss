@@ -1,0 +1,24 @@
+html,body,#root{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body{
+  color: #191f25;
+  font-family: -apple-system,PingFang SC,Segoe UI,Microsoft YaHei,STHeiti,Helvetica Neue,Helvetica,Tahoma,Arial,sans-serif,Apple Color Emoji;
+  line-height: 1.7;
+}
+
+#root{
+  min-width: 1000px;
+}
+
+// hover
+.hover-gray:hover{
+  background-color: rgb(242, 244, 245);
+}
+
+.hover-gray-more:hover{
+  background-color: rgba(25, 31, 37, 0.12);
+}

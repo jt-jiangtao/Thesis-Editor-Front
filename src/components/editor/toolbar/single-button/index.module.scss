@@ -1,0 +1,44 @@
+.button{
+    display: inline-flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px;
+    border-radius: 4px;
+    //color: rgb(58, 60, 63);
+    color: #3D4757;;
+    justify-content: center;
+    font-weight: lighter;
+    height: fit-content;
+
+    .button-icon{
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon{
+            width: 20px;
+            height: 20px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &-not-disable{
+        &:hover{
+            background-color: rgba(25, 31, 37, 0.08);
+        }
+    }
+    &-active{
+        background-color: rgba(25, 31, 37, 0.12);
+    }
+    &-hidden{
+        display: none;
+    }
+    &-disable{
+        opacity: .4;
+        cursor: not-allowed;
+    }
+}

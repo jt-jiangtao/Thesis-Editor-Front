@@ -1,0 +1,64 @@
+.tools-list{
+    width: 60px;
+    padding: 20px 0;
+    overflow: hidden;
+    border-right: 1px solid #e7e9eb;
+    background-color: #f9fbfc;
+    .tool-wrapper{
+        width: 60px;
+        display: flex;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+        border-right: 3px solid transparent;
+    }
+    .tool-wrapper-active{
+        border-right: 3px solid #1890ff;
+        .tool{
+            background-color: #e6f7ff;
+            color: #40a9ff;
+        }
+    }
+    .tool-wrapper-hover .tool:hover{
+        background-color: rgba(25, 31, 37, 0.08);
+    }
+    .tool{
+        border-radius: 6px;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .tool-name-wrapper{
+            height: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .tool-name{
+                display: flex;
+                font-size: 10px;
+                transform: scale(.8);
+                transform-origin: 20% 50%;
+            }
+        }
+    }
+}
+
+.tools-list__hidden{
+    display: none;
+}
+
+.tools-container {
+    padding: 10px 0;
+    //background-color: white;
+    background: linear-gradient(269.7deg, rgba(255, 255, 255, 0.7) 76.34%, rgba(255, 255, 255, 0) 103.83%);
+    width: 320px;
+    overflow-y: auto;
+    border-right: 1px solid #e7e9eb;
+}
+
+.tools-container-hidden{
+    display: none;
+}

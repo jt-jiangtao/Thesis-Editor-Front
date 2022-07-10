@@ -1,0 +1,45 @@
+.tools{
+  height: 36px;
+  //height: 60px;
+  width: 100%;
+  //border-bottom: 1px solid #e2e6ed;
+  display: flex;
+}
+
+.tools-detail{
+  height: 60px;
+}
+
+.tools-container{
+  padding: 4px 24px;
+  flex: 1;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  .tools-more{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24px;
+    font-size: 20px;
+    .icon-container{
+      font-size: 20px;
+      display: flex;
+      width: 20px;
+      height: 20px;
+      overflow: hidden;
+      color: rgba(23, 26, 29, 0.4);
+      border-radius: 4px;
+      transform: rotate(0);
+    }
+    .icon-container-rotate{
+      transform: rotate(180deg);
+    }
+  }
+}

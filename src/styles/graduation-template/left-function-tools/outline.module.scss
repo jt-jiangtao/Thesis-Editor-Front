@@ -1,0 +1,41 @@
+@import "../../variables";
+
+.outline-container{
+  margin: 0 12px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .outline-header{
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 46px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    .title{
+      display: flex;
+      align-items: center;
+      padding: 7px 4px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    .close{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 6px;
+      padding: 4px;
+      border-radius: 4px;
+      font-size: 14px;
+      color: #a7a9ac;
+    }
+  }
+  .outline-content{
+      flex: 1;
+  }
+}
+
+.outline-hidden{
+  display: none;
+}

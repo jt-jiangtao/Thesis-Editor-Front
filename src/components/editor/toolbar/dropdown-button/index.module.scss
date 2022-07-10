@@ -1,0 +1,42 @@
+.dropdown-button{
+    display: flex;
+    flex-direction: row;
+
+    .down-content{
+        margin: 0;
+        padding: 0;
+        border-right: 1px solid transparent;
+        display: flex;
+        flex: 1;
+        overflow: hidden;
+    }
+
+    .down-content-split:hover{
+        border-right: 1px solid rgba(17, 31, 44, 0.12);
+    }
+
+    .down-icon{
+        padding: 0;
+        width: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(0deg) scale(1);
+        font-size: 8px;
+        color: rgba(17, 31, 44, 0.56);
+        &-rotate{
+            transform: rotate(180deg) scale(1);
+        }
+    }
+
+    .down-icon-split:hover{
+        background-color: rgba(25, 31, 37, 0.08);
+    }
+}
+
+.dropdown{
+    border-radius: 4px;
+    &:hover{
+        background-color: rgba(25, 31, 37, 0.08);
+    }
+}
